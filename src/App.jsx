@@ -7,7 +7,6 @@ import addition from "./components/Addition";
 const App = () => {
 	const [nbr3, setNbr3] = useState(0);
 	const [nbr4, setNbr4] = useState(0);
-	const [result, setResult] = useState(0);
 	const [divisionResult, setDivisionResult] = useState(0);
 	const [errorMessage, setErrorMessage] = useState("");
 
@@ -23,7 +22,7 @@ const App = () => {
 		<div>
 			<h1>Calculatrice</h1>
 			<Counter />
-			<addition />
+			<Addition />
 			<h2>Diviser 2 nombres</h2>
 			<input
 				placeholder="first number"
