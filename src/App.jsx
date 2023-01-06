@@ -1,9 +1,9 @@
 import {useEffect, useState} from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
+import Counter from './components/Counter'
 
 const App = () => {
-  const [counter, setCounter] = useState(0);
   const [number1, setNumber1] = useState(0);
   const [number2, setNumber2] = useState(0);
   const [nbr3, setNbr3] = useState(0);
@@ -11,9 +11,6 @@ const App = () => {
   const [result, setResult] = useState(0);
   const [divisionResult, setDivisionResult] = useState(0);
   const [errorMessage, setErrorMessage] = useState("");
-
-  const decrement = () => setCounter(counter - 1);
-  const increment = () => setCounter(counter + 1);
 
 
   const addition = () => {
@@ -30,11 +27,8 @@ const App = () => {
 
   return (
     <div>
-      <h1>My Movie DB</h1>
-      <button onClick={decrement}>{"-"}</button>
-      {counter}
-      <button onClick={increment}>{"+"} </button>
-      <br></br>
+      <h1>Calculatrice</h1>
+      <Counter />
       <h2>Ajouter 2 nombres</h2>
       <input
         placeholder="first number"
