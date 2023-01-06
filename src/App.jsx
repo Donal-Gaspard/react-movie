@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
+import { useState } from "react";
 import "./App.css";
 import Counter from "./components/Counter";
-import addition from "./components/Addition";
+import Addition from "./components/Addition";
 
 const App = () => {
 	const [nbr3, setNbr3] = useState(0);
