@@ -3,9 +3,9 @@ import React, { useState } from "react";
 const Multiplication = () => {
 	const [nbr5, setNbr5] = useState(0);
 	const [nbr6, setNbr6] = useState(0);
-	const [multiplicationResult, setDivisionResult] = useState(0);
-
-		setmultiplicationResult(nbr3 * nbr4);
+	const [MultiplicationResult, setMultiplicationResult] = useState(0);
+	const Multiplication = () => {
+		setMultiplicationResult(nbr5 * nbr6);
 	};
 	return (
 		<>
@@ -26,11 +26,9 @@ const Multiplication = () => {
 			/>
 			{nbr6}
 			<button onClick={Multiplication}>{"="}</button>
-			{multiplicationResult}
-			<br></br>
-			{errorMessage}
+			{MultiplicationResult}
 		</>
 	);
 };
 
-export default Division;
+export default Multiplication;
