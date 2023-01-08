@@ -2,6 +2,7 @@ import Counter from "./components/Counter";
 import Addition from "./components/Addition";
 import Division from "./components/Division";
 import Multiplication from "./components/Multiplication";
+import Soustraction from "./components/Soustraction";
 
 import "./App.css";
 
@@ -12,6 +13,7 @@ const App = () => (
 		<Addition />
 		<Division />
 		<Multiplication />
+		<Soustraction />
 	</div>
 );
 
