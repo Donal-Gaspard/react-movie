@@ -2,18 +2,20 @@ import Counter from "./components/Counter";
 import Addition from "./components/Addition";
 import Division from "./components/Division";
 import Multiplication from "./components/Multiplication";
-import Soustraction from "./components/Soustraction";
+import Identification from "./components/Identification";
 
 import "./App.css";
 
 const App = () => (
 	<div>
 		<h1>Calculatrice</h1>
-		<Counter number={10} />
-		<Addition />
-		<Division />
-		<Multiplication />
-		<Soustraction />
+		<Identification name='Donal' pseudo='Do'/>
+		<Identification name='Rodolphe'/>
+		<Counter number={0} />
+		<Counter number={2} />
+		<Addition /> {/* ajouter les props */}
+		<Division /> {/* ajouter les props */}
+		<Multiplication /> {/* ajouter les props */}
 	</div>
 );
 
