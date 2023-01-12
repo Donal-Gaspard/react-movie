@@ -7,7 +7,7 @@ import "./App.css";
 const App = () => (
 		<div>
 			<h1>Calculatrice</h1>
-			<Counter />
+			<Counter number={10} />
 			<Addition />
 			<Division />
 			{/* <Multiplication /> */}
