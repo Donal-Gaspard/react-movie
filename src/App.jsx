@@ -10,10 +10,10 @@ const App = () => (
 	<div>
 		<h1>Calculatrice</h1>
 		<Identification name="Donal" pseudo="Do" />
-		<Identification name="Rodolphe" />
+		<Identification name="Rodolphe"/>
 		<Counter number={0} />
 		<Counter number={2} />
-		<Addition number1={8} number2={4} />
+		<Addition defaultNbr1={3} defaultNbr2={5}/>
 		<Division /> {/* ajouter les props */}
 		<Multiplication /> {/* ajouter les props */}
 	</div>

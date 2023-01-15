@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 
-const Addition = (props) => {
-	const [number1, setNumber1] = useState(props.number1);
-	const [number2, setNumber2] = useState(props.number2);
-	const [result, setResult] = useState(0);
+interface Props {
+	defaultNbr1: number;
+	defaultNbr2: number;
+}
+
+const Addition = (props: Props) => {
+	const { defaultNbr1, defaultNbr2 } = props;
+
+	const [number1, setNumber1] = useState<number>(defaultNbr1);
+	const [number2, setNumber2] = useState<number>(defaultNbr2);
+	const [result, setResult] = useState<number>(0);
 
 	const addition = () => {
 		setResult(number1 + number2);

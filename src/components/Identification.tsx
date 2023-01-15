@@ -1,9 +1,16 @@
 import React from 'react';
 
-const Identification = (props) => {
+interface Props {
+  name: string;
+  pseudo?: string ;
+}
+
+const Identification = (props: Props) => {
   // faire passer une props age et dire si l'utilisateur est majeur ou mineur
+
   return (
     <div>
+
       bonjour M* {props.name}
       {" "}
       {
