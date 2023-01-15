@@ -14,8 +14,8 @@ const App = () => (
 		<Counter defaultNumber={7} />
 		<Counter defaultNumber={3} />
 		<Addition defaultNbr1={3} defaultNbr2={5} />
-		<Division /> {/* ajouter les props */}
-		<Multiplication /> {/* ajouter les props */}
+		<Division defaultNbr3={5} defaultNbr4={10} />
+		<Multiplication defaultNbr6={5} defaultNbr7={9} />
 	</div>
 );
 

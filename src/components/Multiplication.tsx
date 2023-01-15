@@ -1,8 +1,15 @@
 import React, { useState } from "react";
+import Identification from "./Identification";
 
-const Multiplication = () => {
-	const [nbr5, setNbr5] = useState(0);
-	const [nbr6, setNbr6] = useState(0);
+interface Multi {
+	defaultNbr6: number;
+	defaultNbr7: number;
+}
+
+const Multiplication = (props: Multi) => {
+	const { defaultNbr6, defaultNbr7 } = props;
+	const [nbr5, setNbr5] = useState<number>(defaultNbr6);
+	const [nbr6, setNbr6] = useState<number>(defaultNbr7);
 	const [MultiplicationResult, setMultiplicationResult] = useState(0);
 	const Multiplication = () => {
 		setMultiplicationResult(nbr5 * nbr6);
