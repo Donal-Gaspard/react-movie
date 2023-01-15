@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-const Addition = () => {
-	const [number1, setNumber1] = useState(0);
-	const [number2, setNumber2] = useState(0);
+const Addition = (props) => {
+	const [number1, setNumber1] = useState(props.number1);
+	const [number2, setNumber2] = useState(props.number2);
 	const [result, setResult] = useState(0);
 
 	const addition = () => {
