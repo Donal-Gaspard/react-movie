@@ -10,8 +10,8 @@ const Identification = (props: Props) => {
 
   return (
     <div>
-
       bonjour M* {props.name}
+      {/* vous être majeur, vous ête mineur */}
       {" "}
       {
         props.pseudo ? <span> mon pseudo est {props.pseudo}</span> : <span> je n'ai pas de pseudo</span>
