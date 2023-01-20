@@ -9,7 +9,7 @@ import "./App.css";
 const App = () => (
 	<div>
 		<h1>Calculatrice</h1>
-		<Identification name="Donal" pseudo="Do" />
+		<Identification name="Donal" pseudo="Do" giage="18" />
 		<Identification name="Rodolphe" />
 		<Counter defaultNumber={7} />
 		<Counter defaultNumbruer={3} />

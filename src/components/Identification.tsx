@@ -3,6 +3,7 @@ import React from "react";
 interface Props {
 	name: string;
 	pseudo?: string;
+  age: number;
 }
 
 const Identification = (props: Props) => {
@@ -11,7 +12,11 @@ const Identification = (props: Props) => {
 	return (
 		<div>
 			bonjour M* {props.name}
-			{/* vous êtes majeur, vous êtes mineur */}{" "}
+ {props.age (
+				<span> vous êtes majeur</span>
+			) :
+      <span>Vous êtes mineur</span>
+
 			{props.pseudo ? (
 				<span> mon pseudo est {props.pseudo}</span>
 			) : (
