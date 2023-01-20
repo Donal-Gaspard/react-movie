@@ -12,7 +12,7 @@ const App = () => (
 		<Identification name="Donal" pseudo="Do" />
 		<Identification name="Rodolphe" />
 		<Counter defaultNumber={7} />
-		<Counter defaultNumber={3} />
+		<Counter defaultNumbruer={3} />
 		<Addition defaultNbr1={3} defaultNbr2={5} />
 		<Division defaultNbr3={5} defaultNbr4={10} />
 		<Multiplication defaultNbr6={5} defaultNbr7={9} />
