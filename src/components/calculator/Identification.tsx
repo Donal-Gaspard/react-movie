@@ -25,11 +25,10 @@ const Identification = (props: Props) => {
 					: <div>{age}: Vous êtes mineur</div>
 			}
 			{
-				hasPet && // si et seulement si il a un pet
+				hasPet  && // si et seulement si il a un pet
 				<div> Vous avez un animal</div>
 			}
 			<br/>
-
     </div>
   );
 };

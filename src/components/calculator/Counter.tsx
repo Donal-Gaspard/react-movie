@@ -10,7 +10,6 @@ const Counter = (props: Counter) => {
 	const decrement = () => setCounter(counter - 1);
 	const increment = () => setCounter(counter + 1);
 
-	console.log("counter", counter);
 
 	return (
 		<>
