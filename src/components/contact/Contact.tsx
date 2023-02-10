@@ -44,32 +44,25 @@ const Contact = () => {
 
 	console.log("Contact");
 
-  const remooveContact =(contacts.length) => {
-  switch (key) {
-    case value: contacts.length > 0; <h3>Nombre de contacts : {contacts.length}</h3>; 
-      
-      break;
-  
-    default:
-      break;
-  }  
+  // si le nombre de contact est = 0 ne rien afficher
+  // si le nombre de contact est = 1 afficher contact
+  // si le nombre de contact est > 1 afficher contacts
+  const contactText =() => {
+    switch (contacts.length) {
+      case 0:
+        return '';
+      case 1:
+        return `Nombre de contact: ${contacts.length}`
+      default:
+        return `Nombre de contacts: ${contacts.length}`;
+    }
   }
 
 	return (
 		<div>
 			<h2>Contact</h2>
-			{
-				contacts.length > 1 ? (
-					<h3>Nombre de contacts : {contacts.length}</h3>
-				) : (
-					// ajouter un s si le nombre est supérieur à 1
-					<h3>Nombre de contact : {contacts.length}</h3>
-				) // ajouter un s si le nombre est supérieur à 1
-        
-			}
-
-
-
+      {contactText()}
+      <br/>
 			<input
 				type="text"
 				onChange={(e) =>
@@ -83,7 +76,6 @@ const Contact = () => {
 			<ul style={{ listStyle: "none" }}>{contactsRender}</ul>
 		</div>
 	);
-
 };
 
 export default Contact;
